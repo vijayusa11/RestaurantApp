@@ -1,0 +1,95 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h2>Vijay's Restaurant Record App</h2>
+        <div class="d-flex">
+            <button type="button"(click)="clickAddResto()" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Restaurant</button>
+            <button routerLink="/login" class="btn btn-danger mx-3">Log Out</button>
+        </div>
+    </div>
+</nav>
+
+<!--Jumbotron here-->
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Hello, Welcome to Hazipur !!!!!</h1>
+        <p class="col-md-8 fs-4">This is a vijay & learning Angular</p>
+        <a class="btn btn-primary btn-lg text-center" target="_blank" href="https://tesla-vijay.web.app/" type="button">Learn more</a>
+    </div>
+  </div>
+
+<!-- Table here show -->
+<table class="table" mt-4>
+    <thead>
+        <tr>
+            <th scope="col">Restaurant ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Address</th>
+            <th scope="col">Services</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody *ngFor = "let data of allRestauraneData" >
+        <td>{{data.id}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.mobile}}</td>
+        <td>{{data.address}}</td>
+        <td>{{data.services}}</td>
+        <td>
+            <button (click)="onEditResto(data)" class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button> &nbsp;
+            <button (click)="deleteResto(data)" class="btn btn-danger">Delete</button>
+        </td>
+    </tbody>
+</table>
+ 
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Vijay's Restaurant</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup] = "formvalue">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Restaurant Name</label>
+                  <input type="text" formControlName="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Restaurant Name">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div><br>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email ID</label>
+                    <input type="text" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter EMail ID">
+                </div><br>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Mobile Number</label>
+                    <input type="text" formControlName="mobile" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Mobile Number">
+                </div><br>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Address</label>
+                    <input type="text" formControlName="address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Address">
+                </div><br>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Services</label>
+                    <input type="text" formControlName="services" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Services like Consulting, Development etc....">
+                </div><br>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button *ngIf="showAdd" type="button" class="btn btn-primary" (click)="addResto()">Add Details</button>
+          <button *ngIf="showUpdate" type="button" (click)="updateResto()" class="btn btn-primary">Update Details</button>
+        </div>
+      </div>
+    </div>
+  </div>

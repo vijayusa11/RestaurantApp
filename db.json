@@ -1,0 +1,139 @@
+{
+  "posts": [
+    {
+      "id": 3,
+      "name": "Dash",
+      "email": "papa@gmail.com",
+      "mobile": "9462885792",
+      "address": "KBHB"
+    },
+    {
+      "id": 4,
+      "name": "PAPA",
+      "email": "papa123@yahoo.com",
+      "mobile": "9414671989",
+      "address": "2 KBHB"
+    },
+    {
+      "id": 5,
+      "name": null,
+      "email": null,
+      "mobile": null,
+      "address": null
+    },
+    {
+      "id": 6,
+      "name": null,
+      "email": null,
+      "mobile": null,
+      "address": null
+    },
+    {
+      "id": 7,
+      "name": "",
+      "email": "",
+      "mobile": "",
+      "address": ""
+    },
+    {
+      "id": 8,
+      "name": "ashu",
+      "email": "ashu@hotmail.com",
+      "mobile": "844584865486",
+      "address": "satna"
+    },
+    {
+      "id": 9,
+      "name": "Vijay",
+      "email": "vijayusa11@gmail.com",
+      "mobile": "7627032706",
+      "address": "Hazipur"
+    },
+    {
+      "id": 10,
+      "name": "Choudhary",
+      "email": "Choudhary@yahoo.com",
+      "mobile": "7340500522",
+      "address": "Patna"
+    },
+    {
+      "id": 11,
+      "name": "Jai",
+      "email": "jai@gmail.com",
+      "mobile": "7340500522",
+      "address": "KBHB"
+    },
+    {
+      "id": 12,
+      "name": "hell",
+      "email": "h@hmail.com",
+      "mobile": "7340500522",
+      "address": "kbhb",
+      "services": "IT"
+    },
+    {
+      "id": 13,
+      "name": "ok",
+      "email": "ok@ok.com",
+      "mobile": "7627032706",
+      "address": "okay",
+      "services": "okay"
+    },
+    {
+      "id": 14,
+      "name": "yogesh",
+      "email": "yogesh@gmail.com",
+      "mobile": "7627032706",
+      "address": "kbhb",
+      "services": "Staffing"
+    },
+    {
+      "id": 15,
+      "name": "PAPA",
+      "email": "papa@gmail.com",
+      "mobile": "9462885792",
+      "address": "KBHB"
+    },
+    {
+      "id": 16,
+      "name": "PAPA",
+      "email": "papa@gmail.com",
+      "mobile": "9462885792",
+      "address": "KBHB"
+    }
+  ],
+  "signup": [
+    {
+      "name": "vijay",
+      "email": "vijay@gmail.com",
+      "mobile": "7627032706",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "name": "bhai",
+      "email": "bhai@gmail.com",
+      "mobile": "7627032706",
+      "password": "123455",
+      "id": 2
+    },
+    {
+      "name": "vijay1",
+      "email": "vijay1@gmail.com",
+      "mobile": "7627032706",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "name": "rohit",
+      "email": "rohit@gmail.com",
+      "mobile": "1234567990",
+      "password": "12345",
+      "id": 4
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
